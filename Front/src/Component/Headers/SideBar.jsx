@@ -1,6 +1,5 @@
 import React from 'react';
-import {tokens} from "../../Theme/theme";
-import {Box, Typography, useTheme} from '@mui/material';
+import {Box, Typography} from '@mui/material';
 import {Link} from 'react-router-dom';
 import {Sidebar, MenuItem, Menu} from "react-pro-sidebar";
 import HomeIcon from '@mui/icons-material/Home';
@@ -9,12 +8,10 @@ import ContactIcon from '@mui/icons-material/ContactSupport';
 
 function Item(props) {
     const {icon, title, to, ...other} = props;
-    const color = tokens(useTheme().palette.mode);
     return (
         <Box>
             <MenuItem
                 component={<Link to={to}/>}
-                style={{backgroundColor: color.blueAccent[900]}}
                 sx={{backgroundColor: "transparent !important"}}
                 icon={icon}
             >
