@@ -12,17 +12,17 @@ export default function Main() {
         // <ThemeProvider>
         <div>
 
-            <Box sx={{display: "flex", flexDirection: "row", height: "100vh"}}>
+            <Box sx={{display: "flex", height: "100%", minHeight: "100vh"}}>
                 <Sidebar/>
+                <div>
+                    <Routes>
+                        <Route path="/home" element={<Home/>}/>
+                        <Route path="/inventory" element={<Inventory/>}/>
+                        <Route path="/feedback" element={<FeedBack/>}/>
+                        <Route path="/contact" element={<Contact/>}/>
+                    </Routes>
+                </div>
             </Box>
-            <div>
-                <Routes>
-                    <Route path="/home" element={<Home/>}/>
-                    <Route path="/inventory" element={<Inventory/>}/>
-                    <Route path="/feedback" element={<FeedBack/>}/>
-                    <Route path="/contact" element={<Contact/>}/>
-                </Routes>
-            </div>
         </div>
         // </ThemeProvider>
     );
