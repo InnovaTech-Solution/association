@@ -1,7 +1,6 @@
 import React, {useState} from 'react';
 import {Box, Container, TextField, Button, InputAdornment} from "@mui/material";
 import AccountCircleIcon from '@mui/icons-material/AccountCircle';
-import LockIcon from '@mui/icons-material/Lock';
 import VisibilityIcon from '@mui/icons-material/Visibility';
 import VisibilityOffIcon from '@mui/icons-material/VisibilityOff';
 
@@ -16,7 +15,6 @@ export default function Login() {
     const togglePasswordVisibility = () => {
         setShowPassword(!showPassword);
     };
-
     return (
         <Box
             sx={{
