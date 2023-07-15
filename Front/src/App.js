@@ -5,7 +5,6 @@ import {ThemeProvider, CssBaseline} from "@mui/material";
 
 import Main from "./Layout/Main";
 import Login from "./Pages/Login";
-import Register from "./Pages/Register";
 
 function App() {
     const [theme, colorMode] = useMode();
@@ -15,7 +14,6 @@ function App() {
                 <CssBaseline/>
                 <BrowserRouter>
                     <Routes>
-                        <Route path="/register" element={<Register/>}/>
                         <Route path="/*" element={<Main/>}/>
                         <Route path="*" element={<Main/>}/>
                         <Route path="/login" element={<Login/>}/>
