@@ -17,7 +17,13 @@ export default function Login() {
                 filter: 'brightness(50%)',
             }}
         >
-            <Container sx={{display: 'flex', justifyContent: 'center', alignItems: 'center'}}>
+            <Container
+                sx={{
+                    display: 'flex',
+                    justifyContent: 'center',
+                    alignItems: 'center',
+                }}
+            >
                 <Box
                     sx={{
                         height: '60vh',
@@ -31,7 +37,9 @@ export default function Login() {
                         alignContent: 'center',
                     }}
                 >
-                    <h1 style={{marginBottom: '1rem'}}>Connexion</h1>
+                    <h1 style={{marginBottom: '1rem', fontSize: '2rem'}}>
+                        Connexion
+                    </h1>
                     <Box
                         component="form"
                         sx={{
