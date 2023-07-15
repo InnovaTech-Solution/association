@@ -1,0 +1,9 @@
+dev:
+  db_user: "root"
+  db_password: "password"
+  db_config: "mongodb:27017/solervis?authSource=admin"
+
+prod:
+  db_user: ""
+  db_password: ""
+  db_config: ""
