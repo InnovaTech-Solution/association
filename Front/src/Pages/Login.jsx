@@ -1,5 +1,5 @@
 import React from 'react';
-import { Box, Container, TextField, Button, InputAdornment } from "@mui/material";
+import {Box, Container, TextField, Button, InputAdornment} from "@mui/material";
 import AccountCircleIcon from '@mui/icons-material/AccountCircle';
 import LockIcon from '@mui/icons-material/Lock';
 
@@ -9,12 +9,15 @@ export default function Login() {
             sx={{
                 height: '100vh',
                 backgroundImage: 'url(https://source.unsplash.com/random)',
+                backgroundSize: 'cover',
+                backgroundPosition: 'center',
                 display: 'flex',
                 justifyContent: 'center',
                 alignItems: 'center',
+                filter: 'brightness(50%)',
             }}
         >
-            <Container sx={{ display: 'flex', justifyContent: 'center', alignItems: 'center' }}>
+            <Container sx={{display: 'flex', justifyContent: 'center', alignItems: 'center'}}>
                 <Box
                     sx={{
                         height: '60vh',
@@ -25,14 +28,22 @@ export default function Login() {
                         flexDirection: 'column',
                         alignItems: 'center',
                         justifyContent: 'center',
+                        alignContent: 'center',
                     }}
                 >
-                    <h1 style={{ marginBottom: '1rem' }}>Connexion</h1>
-                    <form>
+                    <h1 style={{marginBottom: '1rem'}}>Connexion</h1>
+                    <Box
+                        component="form"
+                        sx={{
+                            display: 'flex',
+                            flexDirection: 'column',
+                            alignItems: 'center',
+                            justifyContent: 'center',
+                        }}
+                    >
                         <TextField
                             sx={{
                                 width: '55vh',
-                                marginLeft: '1rem',
                                 marginBottom: '1rem',
                                 justifyContent: 'center',
                             }}
@@ -40,7 +51,7 @@ export default function Login() {
                             InputProps={{
                                 endAdornment: (
                                     <InputAdornment position="end">
-                                        <AccountCircleIcon />
+                                        <AccountCircleIcon/>
                                     </InputAdornment>
                                 ),
                             }}
@@ -48,7 +59,6 @@ export default function Login() {
                         <TextField
                             sx={{
                                 width: '55vh',
-                                marginLeft: '1rem',
                                 marginBottom: '1rem',
                             }}
                             label="Mot de passe"
@@ -56,15 +66,15 @@ export default function Login() {
                             InputProps={{
                                 endAdornment: (
                                     <InputAdornment position="end">
-                                        <LockIcon />
+                                        <LockIcon/>
                                     </InputAdornment>
                                 ),
                             }}
                         />
-                        <Button variant="contained" sx={{ width: '20vh'}}>
+                        <Button variant="contained" type={'submit'} sx={{width: '20vh'}}>
                             Connexion
                         </Button>
-                    </form>
+                    </Box>
                 </Box>
             </Container>
         </Box>
