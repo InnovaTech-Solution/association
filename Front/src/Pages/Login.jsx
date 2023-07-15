@@ -17,6 +17,7 @@ export default function Login() {
         >
             <img
                 src={"https://source.unsplash.com/random"}
+                alt={"background"}
                 style={{
                     filter: 'brightness(50%)',
                     backgroundPosition: 'center',
