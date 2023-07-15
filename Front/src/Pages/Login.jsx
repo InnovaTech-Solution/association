@@ -67,7 +67,7 @@ export default function Login() {
                         alignContent: 'center',
                     }}
                 >
-                    <h1 style={{marginBottom: '1rem', fontSize: '2rem'}}>
+                    <h1 style={{marginBottom: '5rem', fontSize: '2rem'}}>
                         {showRegistration ? 'Inscription' : 'Connexion'}
                     </h1>
                     <Box
