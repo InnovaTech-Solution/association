@@ -25,6 +25,7 @@ export default function Login() {
                     maxHeight: '100vh',
                     objectFit: 'cover',
                     position: 'absolute',
+                    objectPosition: 'center',
                     top: 0,
                     left: 0,
                     right: 0,
