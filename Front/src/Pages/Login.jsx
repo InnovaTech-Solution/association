@@ -8,15 +8,30 @@ export default function Login() {
         <Box
             sx={{
                 height: '100vh',
-                backgroundImage: 'url(https://source.unsplash.com/random)',
-                backgroundSize: 'cover',
-                backgroundPosition: 'center',
                 display: 'flex',
                 justifyContent: 'center',
                 alignItems: 'center',
-                filter: 'brightness(50%)',
+                flexDirection: 'column',
+                position: 'relative',
             }}
         >
+            <img
+                src={"https://source.unsplash.com/random"}
+                style={{
+                    filter: 'brightness(50%)',
+                    backgroundPosition: 'center',
+                    backgroundSize: 'cover',
+                    width: '100%',
+                    maxHeight: '100vh',
+                    objectFit: 'cover',
+                    position: 'absolute',
+                    top: 0,
+                    left: 0,
+                    right: 0,
+                    bottom: 0,
+                    zIndex: -1,
+                }}
+            />
             <Container
                 sx={{
                     display: 'flex',
