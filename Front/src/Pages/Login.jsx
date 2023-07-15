@@ -99,6 +99,15 @@ export default function Login() {
                         <Button variant="contained" type={'submit'} sx={{width: '20vh'}}>
                             Connexion
                         </Button>
+                        <Button
+                            variant="text"
+                            sx={{marginTop: '1rem'}}
+                            onClick={() => {
+                                window.location.href = '/register';
+                            }}
+                        >
+                            Pas encore membre ? Inscrivez-vous ici
+                        </Button>
                     </Box>
                 </Box>
             </Container>
