@@ -56,8 +56,8 @@ const SidebarCustom = () => {
                 </Typography>
                 <Item
                     icon={<ContactIcon/>}
-                    title="FeedBack"
-                    to="/feedback"
+                    title="Report bug"
+                    to="/report"
                 />
                 <Item
                     icon={<ContactIcon/>}
