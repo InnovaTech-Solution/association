@@ -65,19 +65,6 @@ const SidebarCustom = () => {
                     title="Calendrier"
                     to="/calendrier"
                 />
-                <Typography variant="subtitle2" color="textSecondary" sx={{pl: 3}}>
-                    Aide
-                </Typography>
-                <Item
-                    icon={<ContactIcon/>}
-                    title="Report bug"
-                    to="/report"
-                />
-                <Item
-                    icon={<ContactIcon/>}
-                    title="Contact"
-                    to="/contact"
-                />
             </Menu>
         </Sidebar>
     );
