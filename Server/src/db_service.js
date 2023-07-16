@@ -21,7 +21,6 @@ try {
   console.log("Error reading config file: ", error);
 }
 
-// const connectionString = "mongodb://root:password@mongodb:27017/solervis?authSource=admin";
 const connectionString = "mongodb://" + db_config.db_user + ":" + db_config.db_password + "@" + db_config.db_config
 
 async function connectToMongoDB() {

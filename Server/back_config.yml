@@ -1,7 +1,7 @@
 dev:
   db_user: "root"
   db_password: "password"
-  db_config: "mongodb:27017/solervis?authSource=admin"
+  db_config: "mongodb:27017/association?authSource=admin"
 
 prod:
   db_user: ""
