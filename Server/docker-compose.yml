@@ -2,7 +2,7 @@ version: "3.8"
 
 services:
   app:
-    container_name: app
+    container_name: app-assoc
     build: .
     ports:
       - "3000:3000"
@@ -12,13 +12,13 @@ services:
     volumes:
       - .:/app
       - /app/node_modules
-    env_file: 
+    env_file:
       - .env
     restart: unless-stopped
 
   mongodb:
     image: mongo:6.0
-    container_name: mongodb
+    container_name: mongodb-assoc
     environment:
         - MONGO_INITDB_ROOT_USERNAME=root
         - MONGO_INITDB_ROOT_PASSWORD=password
@@ -30,7 +30,7 @@ services:
 
   mongo-express:
     image: mongo-express
-    container_name: mongo-express
+    container_name: mongo-express-assoc
     command: sh -c "sleep 9 && node app"
     environment:
       - ME_CONFIG_MONGODB_ADMINUSERNAME=root

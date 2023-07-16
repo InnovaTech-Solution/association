@@ -68,7 +68,6 @@ router.post('/login', async (req, res) => {
 
 router.post('/register', async (req, res) => {
 // Route for registering a new user.
-
     // Check if the user already exists
     const existingUser = await user_model.findOne({email: req.body.email});
     if (existingUser) {
