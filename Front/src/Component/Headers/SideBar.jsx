@@ -41,7 +41,7 @@ const SidebarCustom = () => {
                 />
 
                 <Typography variant="subtitle2" color="textSecondary" sx={{pl: 3}}>
-                    Nos réalisations
+                    Stock
                 </Typography>
 
                 <Item
@@ -49,10 +49,24 @@ const SidebarCustom = () => {
                     title="Inventaire"
                     to="/inventory"
                 />
-
-
                 <Typography variant="subtitle2" color="textSecondary" sx={{pl: 3}}>
-                    Contacts / Partenaires
+                    Comptabilité
+                </Typography>
+                <Item
+                    icon={<ContactIcon/>}
+                    title="Faire les comptes"
+                    to="/comptabilite"
+                />
+                <Typography variant="subtitle2" color="textSecondary" sx={{pl: 3}}>
+                    Gestion d'évènements
+                </Typography>
+                <Item
+                    icon={<ContactIcon/>}
+                    title="Calendrier"
+                    to="/calendrier"
+                />
+                <Typography variant="subtitle2" color="textSecondary" sx={{pl: 3}}>
+                    Aide
                 </Typography>
                 <Item
                     icon={<ContactIcon/>}
