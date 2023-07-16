@@ -6,10 +6,6 @@ const UserSchema = new mongoose.Schema({
     required: true,
     primaryKey: true
   },
-  username: {
-    type: String,
-    required: true,
-  },
   email: {
     type: String,
     required: true,
@@ -19,24 +15,19 @@ const UserSchema = new mongoose.Schema({
     type: String,
     required: true,
   },
+  name: {
+    type: String,
+    required: true,
+  },
   resetPasswordToken: {
     type: String
   },
   resetPasswordExpires: {
     type: Date
   },
-  age: {
-    type: Number,
-  },
-  city: {
-    type: String,
-  },
-  description: {
-    type: String,
-  },
 });
 
-// export gett all users
+// export get all users
 UserSchema.statics.getUsers = async function () {
   try {
     const users = await this.find({});
