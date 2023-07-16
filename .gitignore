@@ -1,1 +1,34 @@
-.idea
+# Node.js
+node_modules/
+back_end/package-lock.json
+
+# Logs
+logs
+*.log
+
+# MongoDB
+/data/db/
+
+# Environment variables
+.env
+
+# IDEs
+.vscode/
+
+# macOS
+.DS_Store
+
+# Windows
+Thumbs.db
+
+# Jest directories and files
+coverage/
+jest.config.js
+jest.setup.js
+jest.config.json
+
+# local db
+.data/
+
+# IJI
+.idea/
